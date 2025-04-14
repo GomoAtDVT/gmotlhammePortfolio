@@ -165,7 +165,7 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
                 <span className="text-5xl font-medium">Subreddit<br></br> Channel <br></br> Viewer</span>
                 <div className="gap-3 flex flex-col ">
                 <p className='text-xl font-light'>A web application that allows users <br></br> to view and interact with Reddit channels,<br></br> showcasing my skills in API integration<br></br> and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded "><a href="https://gomoatdvt.github.io/Subreddit/" className="">VIEW</a></button>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded "><a href="https://gomoatdvt.github.io/Subreddit/" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
@@ -173,7 +173,7 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
             <span className="text-3xl">SORTED</span>
                 <div className="gap-3 flex flex-col px-11">
                 <p className='text-base  font-light text-start'>A web application that allows users to visually organise tasks they have to complete, improving time management and productivity. Showcasing my skills in DOM manipulation in JavaScript and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer  w-full rounded "><a href="https://gomoatdvt.github.io/To-Do-list/" className="">VIEW</a></button>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer  w-full rounded "><a href="https://gomoatdvt.github.io/To-Do-list/" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
@@ -181,7 +181,7 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
             <span className="text-3xl">Age Calculator</span>
                 <div className="gap-3 flex flex-col px-11 ">
                 <p className='text-base  font-light text-start'>A web application that allows users to recieve an accurate calculation of their, or any other person/ things age. Showcasing my skills in Node package management, DOM manipulation in JavaScript and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer  w-full rounded "><a href="https://gomoatdvt.github.io/Age-calculator/" className="">VIEW</a></button>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer  w-full rounded "><a href="https://gomoatdvt.github.io/Age-calculator/" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
@@ -189,7 +189,7 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
             <span className="text-5xl font-medium"> Blogger <br />Cloud</span>
                 <div className="gap-3 flex flex-col ">
                 <p className='text-xl font-light'>A web application that allows users <br></br> to view, create, post, and delete blogs.<br></br> showcasing my skills in DOM Manipulation<br></br> and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded "><a href="#" className="">VIEW</a></button>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded "><a href="#" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
