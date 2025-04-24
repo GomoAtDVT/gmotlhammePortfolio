@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import MoreInfoModal from "./components/moreInfoModal";
+import { service } from './services.json';
 
 function Portfolio() {
     const [phone, setPhone] = useState("");
-    const [isDarkMode, setIsDarkMode] = useState(false);
 
 const sidebarBtn = ()=>{
     const sidebar = document.getElementById('sidebar')
@@ -13,7 +14,6 @@ const sidebarBtn = ()=>{
 }
 
 const changeAppearence = () => {
-    const root = document.documentElement;
     const toggleContainer = document.getElementById("toggle-container");
     toggleContainer.classList.toggle("invisible");
     toggleContainer.classList.toggle("visible");
@@ -21,7 +21,6 @@ const changeAppearence = () => {
 }
 const body = document.body;
 const lightMode = () => {
-    
     body.style.background = "black";
     body.style.color = "white";
 }
@@ -30,29 +29,24 @@ const darkMode = () => {
     body.style.color = "black";
 }
 
-const popOutBtn = document.querySelector("#pop-out-btn");
-function displayModal() {
-    popOutBtn.showModal();
-}
+    const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const [selectedService, setSelectedService] = useState({}); // State for selected service
+    const openModel = (event) => {
+        const serviceId = event.currentTarget.id; // Get the id of the clicked service
+        const services = service.find((s) => s.id === Number.parseInt(serviceId)); // Find the service data based on the id
+        setIsModalOpen(true); 
+        console.log(services);
+        setSelectedService(services); // Set the selected service data
+    };
 
-function closeModal() {
-    popOutBtn.close();
-}
-
-// Prevent closing modal when clicking inside form
-// form.addEventListener("click", function (e) {
-//   e.stopPropagation();
-// });
-
-// Close modal when clicking outside the form
-// wrapper.addEventListener("click", function () {
-//   closeModal();
-// });
-
+    const closeModal = () => {
+        setIsModalOpen(false); 
+    };
 
     return (
     
     <>
+    <MoreInfoModal isOpen={isModalOpen} onClose={closeModal} service={selectedService} />
         <header className="bg-[url('./white-waves.jpg')] dark:bg-[url('./black-spheres.jpg')] bg-top bg-cover dark:bg-right p-5 m-2 rounded-lg h-170">
             <section className='flex items-center justify-between p-5'>
 
@@ -121,30 +115,30 @@ function closeModal() {
         <section id='services' className='flex rounded-lg justify-end p-5 font-semibold bg-[url("./advanced-circles.jpg")] dark:bg-[url("./blend.jpg")] bg-cover dark:text-white h-110 text-5xl '>EXPLORE MY <br></br> SERVICES</section>
 
 
-        <section className=' bg-transparent overflow-y-scroll hidescroll flex flex-col gap-2.5 h-110'>
+        <section className=' bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110'>
 
             <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>WEB DEVELOPMENT 
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 cursor-pointer dark:text-white'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>WEB DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 cursor-pointer dark:text-white' onClick={openModel} id="1">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>WEB DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="1">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
 
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg  flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg  flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="2">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white  text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="2">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
 
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
             <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
             </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
             <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
             </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
             <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
             </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
             <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer'>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
             </div>
         </section>
         
