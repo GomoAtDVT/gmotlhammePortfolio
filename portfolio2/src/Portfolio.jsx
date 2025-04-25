@@ -50,11 +50,11 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
         <header className="bg-[url('./white-waves.jpg')] dark:bg-[url('./black-spheres.jpg')] bg-top bg-cover dark:bg-right p-5 m-2 rounded-lg h-170">
             <section className='flex items-center justify-between p-5'>
 
-                <div id='logo-light' className='hidden dark:block w-35 -mr-15'>
+                <div id='logo-light' className='hidden dark:block w-45 -mr-35'>
                 <img src="./dark-logo.png" alt="logo" />
                 </div>
 
-                <div id='logo-dark' className='dark:hidden w-35  -mr-15'>
+                <div id='logo-dark' className='dark:hidden w-45 -mr-35'>
                 <img src="./dark-nobg-logo.png" alt="logo" />
                 </div>
 
@@ -90,6 +90,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
                         <div  id="toggle-container" className="invisible mt-2">
                             <p onClick={lightMode} className="p-2 ml-7 hover:text-amber-300 dark:hover:text-amber-600 cursor-pointer">LIGHT</p>
                             <p onClick={darkMode} className="p-2 ml-7 hover:text-amber-300 dark:hover:text-amber-600 cursor-pointer">DARK</p>
+                           
                         </div>
                         
                     </div>
@@ -97,19 +98,20 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
                 
             </nav>
             </section>
-            
+            {/* <div className="absolute top-90 w-290 h-0.5 bg-transparent border-amber-50 border-b-1  opacity-10"></div> */}
+            {/* <div className="absolute top-90 left-60 w-120 h-0.5 bg-transparent border-amber-50 border-b-1 rotate-90 opacity-10 "></div> */}
             <section className='w-full h-full font-semibold dark:text-white'>
-                <p className='mt-40'>PRODUCING <br></br>QUALITY VISUAL <br></br>REPRESENTATION</p>
+                <p className='mt-59'>PRODUCING <br></br>QUALITY VISUAL <br></br>REPRESENTATION</p>
 
-                <p className='absolute left-90 bottom-40'>MAINTAINING DEDICATION <br></br>TO PROSPERITY</p>
+                <p className='absolute left-121 bottom-28'>BY MAINTAINING TRUST <br></br>BETWEEN CLIENTS </p>
 
-                <h1 className='absolute text-8xl right-15 bottom-20'>REFLECTING <br></br>CONTINIOUS<br></br> GROWTH</h1>
+                <p className='absolute text-8xl right-4 bottom-20'>REFLECTING <br></br>CONTINIOUS<br></br> GROWTH</p>
             </section>
         </header>
 
 
 
-        <main className=' dark:bg-transparent m-2 grid grid-cols-2 gap-5 mb-75'>
+        <main className=' dark:bg-transparent m-2 grid grid-cols-2 gap-2 mb-75'>
 
             {/* services section  */}
         <section id='services' className='flex rounded-lg justify-end p-5 font-semibold bg-[url("./advanced-circles.jpg")] dark:bg-[url("./blend.jpg")] bg-cover dark:text-white h-110 text-5xl '>EXPLORE MY <br></br> SERVICES</section>
@@ -117,29 +119,22 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
 
         <section className=' bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110'>
 
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>WEB DEVELOPMENT 
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg'>WEB DEVELOPMENT 
             <p className='text-lg flex justify-end mt-11 mr-4 gap-2 cursor-pointer dark:text-white' onClick={openModel} id="1">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>WEB DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="1">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className=' text-4xl  hidden  dark:text-white   dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>WEB DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="1">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
 
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg  flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="2">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white  text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="2">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg  flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="2">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='  text-4xl hidden  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>FULL STACK DEVELOPMENT <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="2">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
 
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg' >CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel} id="3">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
+            <div className='text-4xl  hidden dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg' >CYBERSECURITY
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}  id="3">LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
             </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
-            </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
-            </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden w-full h-35 p-4 rounded-lg'>CYBERSECURITY <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p></div>
-            <div className='bg-white text-4xl hover:bg-linear-90 hidden from-black-500 to-amber-700 duration-300 ease-in-out  dark:text-white dark:bg-black dark:block w-full h-35 p-4 rounded-lg'>CYBERSECURITY
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square "></i></p>
-            </div>
+            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:hover:bg-[url("./blend.jpg")]  mr-1.5 h-35 p-4 rounded-lg'>GRAPHIC DESIGN <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}id="4">LEARN MORE <i className="bi bi-arrow-up-right-square " ></i></p></div>
+            {/* <div className=' text-4xl  hidden   dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>GRAPHIC DESIGN
+            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square " id="4"></i></p>
+            </div> */}
+            
         </section>
         
         <article id='about' className='bg-white dark:bg-black rounded-lg h-150 col-span-full'>
@@ -149,40 +144,40 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
 Beyond code, I care deeply about clean design, performance, and solving real-world problems through technology. I've collaborated on projects that range from improving company websites to building systems from scratch, and I enjoy taking ownership from concept to deployment.</p>
         </article>
 
-        <section id='projects-banner' className='bg-[url("./smooth-white-waves.jpg")] dark:bg-[url("./blend.jpg")] bg-cover bg-center rounded-lg h-50 col-span-full flex justify-between p-5'>
+        <section id='projects-banner' className='bg-[url("./smooth-white-waves.jpg")] dark:bg-[url("./black-spheres.jpg")] bg-cover bg-bottom rounded-lg h-50 col-span-full flex justify-between p-5'>
             <p className='dark:text-white flex justify-end text-xl font-normal place-items-center h-full mt-12 '>BELOW ARE A FEW OF MY PROJECTS <br></br> TO PROVE MY CAPABILITIES</p>
             <p className='dark:text-white flex justify-end text-8xl font-semibold place-items-center pb-9 h-full'>PROJECTS</p>
         </section>
 
-        <section id="projects" className='rounded-lg h-50 col-span-full grid grid-cols-3 gap-2 '>
-            <div id="first-project" className='bg-white dark:text-white dark:bg-black font-semibold flex justify-around items-center rounded-lg h-60 col-span-2 p-5'>
-                <span className="text-5xl font-medium">Subreddit<br></br> Channel <br></br> Viewer</span>
-                <div className="gap-3 flex flex-col ">
-                <p className='text-xl font-light'>A web application that allows users <br></br> to view and interact with Reddit channels,<br></br> showcasing my skills in API integration<br></br> and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded "><a href="https://gomoatdvt.github.io/Subreddit/" target="_blank" className="">VIEW</a></button>
+        <section id="projects" className='rounded-lg h-170 col-span-full grid grid-cols-3 gap-2 '>
+            <div id="first-project" className='bg-white backdrop-blur-2xl dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg h-120 col-span-2 p-5'>
+                <span className="text-6xl italic font-bold">SUBREDDIT<br></br> CHANNEL <br></br> VIEWER</span>
+                <div className="gap-8 flex flex-col ">
+                <p className='text-2xl font-light'>A web application that allows users <br></br> to view and interact with Reddit channels,<br></br> showcasing my skills in API integration<br></br> and user interface design.</p>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer rounded "><a href="https://gomoatdvt.github.io/Subreddit/" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
-            <div id="second-project" className='bg-white dark:text-white dark:bg-black flex flex-col justify-around items-center text-center rounded-lg p-3 h-60'>
-            <span className="text-3xl">SORTED</span>
-                <div className="gap-3 flex flex-col px-11">
-                <p className='text-base  font-light text-start'>A web application that allows users to visually organise tasks they have to complete, improving time management and productivity. Showcasing my skills in DOM manipulation in JavaScript and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer  w-full rounded "><a href="https://gomoatdvt.github.io/To-Do-list/" target="_blank" className="">VIEW</a></button>
+            <div id="second-project" className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left flex flex-col  justify-center gap-15 items-center text-center rounded-lg p-3 '>
+            <span className="text-5xl italic font-bold">SORTED</span>
+                <div className="gap-15 flex flex-col px-11">
+                <p className='text-xl  font-light text-start'>A web application that allows users to visually organise tasks they have to complete, improving time management and productivity. Showcasing my skills in DOM manipulation in JavaScript and user interface design.</p>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer rounded "><a href="https://gomoatdvt.github.io/To-Do-list/" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
-            <div id="third-project" className='bg-white dark:text-white dark:bg-black flex flex-col items-center text-center p-3 justify-around rounded-lg h-60'>
-            <span className="text-3xl">Age Calculator</span>
-                <div className="gap-3 flex flex-col px-11 ">
-                <p className='text-base  font-light text-start'>A web application that allows users to recieve an accurate calculation of their, or any other person/ things age. Showcasing my skills in Node package management, DOM manipulation in JavaScript and user interface design.</p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer  w-full rounded "><a href="https://gomoatdvt.github.io/Age-calculator/" target="_blank" className="">VIEW</a></button>
+            <div id="third-project" className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex flex-col items-center text-center p-3 justify-center gap-15 rounded-lg h-120'>
+            <span className="text-5xl italic font-bold">AGE CALCULATOR</span>
+                <div className="gap-15 flex flex-col px-11 ">
+                <p className='text-xl font-light text-start'>A web application that allows users to recieve an accurate calculation of their, or any other person/ things age. Showcasing my skills in Node package management, DOM manipulation in JavaScript and user interface design.</p>
+                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer rounded "><a href="https://gomoatdvt.github.io/Age-calculator/" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
 
-            <div id="fourth-project" className='bg-white dark:text-white dark:bg-black flex justify-around items-center rounded-lg py-6 col-span-2'>
-            <span className="text-5xl font-medium"> Blogger <br />Cloud</span>
-                <div className="gap-3 flex flex-col ">
-                <p className='text-xl font-light'>A web application that allows users <br></br> to view, create, post, and delete blogs.<br></br> showcasing my skills in DOM Manipulation<br></br> and user interface design.</p>
+            <div id="fourth-project" className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex justify-around items-center rounded-lg py-6 col-span-2'>
+            <span className="text-6xl italic font-bold"> ECHOBYTE </span>
+                <div className="gap-8 flex flex-col ">
+                <p className='text-2xl font-light'>A web application that allows users <br></br> to view, create, post, and delete blogs.<br></br> showcasing my skills in DOM Manipulation<br></br> and user interface design.</p>
                 <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded "><a href="#" target="_blank" className="">VIEW</a></button>
                 </div>
             </div>
@@ -190,8 +185,8 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
         </section>
         </main>
 
-        <footer className=' h-max m-2 grid grid-cols-1 md:grid-cols-2 gap-4 bg-white dark:bg-black p-4 rounded-lg'>
-            <section className='bg-zinc-300 dark:bg-zinc-800 rounded-lg p-8 col-1 row-2 md:row-1'>
+        <footer className=' h-max m-2 grid grid-cols-1 md:grid-cols-2 gap-4 bg-transparent'>
+            <section className='bg-zinc-300 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1'>
             <h1 className='dark:text-white text-4xl mb-7'>Ready to collaborate on converting your dream into reality</h1>
                 <form action="" className='flex flex-col gap-5'>
                     
@@ -224,7 +219,7 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
         country={"za"}
         value={phone}
         onChange={(phone) => setPhone(phone)}
-    />.
+    />
 </div>
 
 
@@ -238,7 +233,7 @@ Beyond code, I care deeply about clean design, performance, and solving real-wor
 
                 </form>
             </section>
-            <section id='technologies' className='bg-[url("./white-cube.jpg")] dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '>b</section>
+            <section id='technologies' className='bg-[url("./white-cube.jpg")] dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '></section>
         </footer>
     </>
     

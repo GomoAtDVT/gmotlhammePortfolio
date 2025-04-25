@@ -7,13 +7,13 @@ const MoreInfoModal = ({ isOpen, onClose ,service}) => {
     return (
         <>
         <div id="modal-overlay" className='h-full w-full z-3 top-0 fixed backdrop-blur-xs' onClick={onClose}>
-            <div id="modal-content" className="h-150 w-150 z-10 fixed top-20 left-110 bg-amber-500 dark:bg-amber-900 rounded-xl " onClick={(e) => e.stopPropagation()}>
+            <div id="modal-content" className="h-150 w-150 z-10 fixed top-20 left-110 bg-amber-500 dark:bg-[url('./dark-modal1.jpg')] bg-cover bg-left rounded-xl " onClick={(e) => e.stopPropagation()}>
                 <button id="modal-close" className='dark:text-white text-2xl p-5 cursor-pointer' onClick={onClose}>
                     &times;
                 </button>
-                <p className="dark:text-white text-4xl p-5  ">{service.name}</p>
-                <p className="dark:text-white text-2xl p-5  mt-4">{service.description}</p>
-                <p className="dark:text-white text-xl p-5 pr-96 ">{service.price}</p>
+                <p className="dark:text-white text-7xl font-semibold italic p-9  ">{service.name}</p>
+                <p className="dark:text-white text-2xl p-9  mt-4">{service.description}</p>
+                <p className="dark:text-white text-xl p-5 pr-96 "></p>
                
             </div>
 
