@@ -8,3 +8,18 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.styleScroll::-webkit-scrollbar {
+  width: 10px;
+  margin: 5px;
+}
+
+.styleScroll::-webkit-scrollbar-track {
+  background: #383838;
+  border-radius: 10px;
+}
+
+.styleScroll::-webkit-scrollbar-thumb {
+  background: #969696;
+  border-radius: 10px;
+}

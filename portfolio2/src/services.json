@@ -1,0 +1,28 @@
+{
+    "service": [
+        {
+            "id": 1,
+            "name": "Web Development",
+            "description": "Building responsive and modern websites tailored to your needs.",
+            "price": "Starting at R1500"
+        },
+        {
+            "id": 2,
+            "name": "Full-Stack Development",
+            "description": "Creating complete web applications with front-end and back-end integration.",
+            "price": "Starting at R1275"
+        },
+        {
+            "id": 3,
+            "name": "Cybersecurity",
+            "description": "Ensuring the security of your web applications and data.",
+            "price": "Starting at R1200"
+        },
+        {
+            "id": 4,
+            "name": "Graphic Design",
+            "description": "Designing logos, banners, and other graphics for your brand.",
+            "price": "Starting at R640"
+        }
+    ]
+}
