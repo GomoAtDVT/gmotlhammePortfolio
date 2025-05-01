@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import MoreInfoModal from "./components/moreInfoModal";
+import TechnologiesCarousel from "./components/technologiesCarousel";
 import { service } from './services.json';
 
 function Portfolio() {
@@ -146,15 +147,15 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
           {/* <div className="absolute top-90 w-290 h-0.5 bg-transparent border-amber-50 border-b-1  opacity-10"></div> */}
           {/* <div className="absolute top-90 left-60 w-120 h-0.5 bg-transparent border-amber-50 border-b-1 rotate-90 opacity-10 "></div> */}
           <section className="w-full h-full font-semibold dark:text-white">
-            <p className="mt-59">
+            <p className="animate-fadeIn mt-59">
               PRODUCING <br></br>QUALITY VISUAL <br></br>REPRESENTATION
             </p>
 
-            <p className="absolute left-121 bottom-28">
+            <p className="animate-fadeIn2 absolute left-121 bottom-28">
               BY MAINTAINING TRUST <br></br>BETWEEN CLIENTS{" "}
             </p>
 
-            <p className="absolute text-8xl right-4 bottom-20">
+            <p className="animate-fadeIn3 absolute text-8xl right-4 bottom-20">
               REFLECTING <br></br>CONTINIOUS<br></br> GROWTH
             </p>
           </section>
@@ -164,13 +165,13 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
           {/* services section  */}
           <section
             id="services"
-            className='flex rounded-lg justify-end p-5 font-semibold bg-[url("./advanced-circles.jpg")] dark:bg-[url("./blend.jpg")] bg-cover dark:text-white h-110 text-5xl '
+            className=' flex rounded-lg justify-end p-5 font-semibold bg-[url("./advanced-circles.jpg")] dark:bg-[url("./blend.jpg")] bg-cover dark:text-white h-110 text-5xl '
           >
-            EXPLORE MY <br></br> SERVICES
+            <p className="animate-fadeIn4">EXPLORE MY <br></br> SERVICES</p>
           </section>
 
           <section className=" bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110">
-            <div className="bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg">
+            {/* <div className="bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg">
               WEB DEVELOPMENT
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 cursor-pointer dark:text-white"
@@ -179,9 +180,9 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
               >
                 LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
               </p>
-            </div>
-            <div className=' text-4xl  hidden  dark:text-white   dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
-              WEB DEVELOPMENT{" "}
+            </div> */}
+            <div className=' text-4xl    dark:text-white   dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
+              <p className="animate-fadeIn3">WEB DEVELOPMENT</p>{" "}
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
                 onClick={openModel}
@@ -202,7 +203,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
               </p>
             </div>
             <div className='  text-4xl hidden  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
-              FULL STACK DEVELOPMENT{" "}
+              <p className="animate-fadeIn3">FULL STACK DEVELOPMENT</p>{" "}
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
                 onClick={openModel}
@@ -223,7 +224,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
               </p>
             </div>
             <div className='text-4xl  hidden dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
-              CYBERSECURITY
+              <p className="animate-fadeIn3">MOBILE DEVELOPMENT</p>
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
                 onClick={openModel}
@@ -251,10 +252,10 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
             id="about"
             className="bg-white dark:bg-black rounded-lg h-150 col-span-full"
           >
-            <p className="text-8xl font-semibold p-5 dark:text-white">
+            <p className="animate-fadeIn4 text-8xl font-semibold p-5 dark:text-white">
               ABOUT <br></br> ME
             </p>
-            <p className=" absolute right-10 top-300 w-150 text-2xl p-5 dark:text-white">
+            <p className="animate-fadeIn3 absolute right-10 top-300 w-150 text-2xl p-5 dark:text-white">
               I'm a passionate Full Stack Developer with a foundation in both
               frontend and backend technologies. I specialize in building
               responsive, user-focused web applications using HTML, CSS,
@@ -275,10 +276,10 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
             id="projects-banner"
             className='bg-[url("./smooth-white-waves.jpg")] dark:bg-[url("./black-spheres.jpg")] bg-cover bg-bottom rounded-lg h-50 col-span-full flex justify-between p-5'
           >
-            <p className="dark:text-white flex justify-end text-xl font-normal place-items-center h-full mt-12 ">
+            <p className="animate-fadeIn4 dark:text-white flex justify-end text-xl font-normal place-items-center h-full mt-12 ">
               BELOW ARE A FEW OF MY PROJECTS <br></br> TO PROVE MY CAPABILITIES
             </p>
-            <p className="dark:text-white flex justify-end text-8xl font-semibold place-items-center pb-9 h-full">
+            <p className="animate-fadeIn3 dark:text-white flex justify-end text-8xl font-semibold place-items-center pb-9 h-full">
               PROJECTS
             </p>
           </section>
@@ -380,7 +381,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
             </div>
           </section>
         </main>
-
+        <TechnologiesCarousel />
         <footer className=" h-max m-2 grid grid-cols-1 md:grid-cols-2 gap-4 bg-transparent">
           <section className="bg-zinc-300 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1">
             <h1 className="dark:text-white text-4xl mb-7">
@@ -452,9 +453,11 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
             </form>
           </section>
           <section
-            id="technologies"
-            className='bg-[url("./white-cube.jpg")] dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '
-          ></section>
+            
+            className=' dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '
+          >
+            
+          </section>
         </footer>
       </>
     );

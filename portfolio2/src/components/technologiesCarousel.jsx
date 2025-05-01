@@ -1,0 +1,75 @@
+import React from "react";
+
+function TechnologiesCarousel() {
+
+
+    const technologies = [
+        {
+            name: "React",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        },
+        {
+            name: "PostgreSQL",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+        },
+        {
+            name: "JavaScript",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        },
+        {
+            name: "Git",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+        },
+        {
+            name: "Tailwind CSS",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+        },
+        {
+            name: "Node.js",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+        },
+        {
+            name: "HTML5",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        },
+        {
+            name: "CSS3",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        },
+        {
+            name: "Figma",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+        },
+        {
+            name: "Azure",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+        },
+        
+        
+    ];
+
+    const [currentIndex, setCurrentIndex] = React.useState(0);
+    setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) );
+    }, 2000); // Change every 3 seconds
+
+    return (
+        <>
+
+            <div id="technologies" className="overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-full bg-gray-100 dark:bg-[url('./dark3.jpg')] bg-cover bg-center rounded-lg">
+                <div className="flex ml-25 ">
+                    {technologies.map((tech, index) => (
+                        <div
+                            key={index}
+                            className={` w-32 h-32 flex flex-col items-center justify-center bg-zinc-800 m-4 rounded-lg opacity-90 shadow-lg transition-transform duration-500 transform ${index === currentIndex ? "scale-110" : "scale-100"}`}
+                        >
+                            <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
+                            <p className="mt-2 text-center text-gray-800 dark:text-white">{tech.name}</p>
+                        </div>
+                    ))}
+                </div>  
+            </div>
+        </>
+    );}
+
+export default TechnologiesCarousel;

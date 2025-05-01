@@ -3,26 +3,25 @@
         {
             "id": 1,
             "name": "Web Development",
-            "description": "Building responsive and modern websites tailored to your needs.",
-            "price": "Starting at R1500"
+            "description": "Building responsive and modern websites tailored to your needs."
+            
         },
         {
             "id": 2,
             "name": "Full-Stack Development",
-            "description": "Creating complete web applications with front-end and back-end integration.",
-            "price": "Starting at R1275"
+            "description": "Creating complete web applications with front-end and back-end integration."
+            
         },
         {
             "id": 3,
-            "name": "Cybersecurity",
-            "description": "Ensuring the security of your web applications and data.",
-            "price": "Starting at R1200"
+            "name": "Mobile Development",
+            "description": "Developing mobile applications for iOS and Android platforms."
+           
         },
         {
             "id": 4,
             "name": "Graphic Design",
-            "description": "Designing logos, banners, and other graphics for your brand.",
-            "price": "Starting at R640"
+            "description": "Designing logos, banners, and other graphics for your brand."
         }
     ]
 }
