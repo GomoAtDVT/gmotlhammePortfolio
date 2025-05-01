@@ -3,7 +3,11 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import MoreInfoModal from "./components/moreInfoModal";
 import TechnologiesCarousel from "./components/technologiesCarousel";
+import ServiceBanner from "./components/ServiceBanner";
+import AboutMe from "./components/AboutMe";
 import { service } from './services.json';
+import ProjectsBanner from "./components/ProjectsBanner";
+import Projects from "./components/Projects";
 
 function Portfolio() {
     const [phone, setPhone] = useState("");
@@ -30,7 +34,7 @@ const darkMode = () => {
     body.style.color = "black";
 }
 
-    const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
+const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
 const [selectedService, setSelectedService] = useState({}); // State for selected service
     const openModel = (event) => {
         const serviceId = event.currentTarget.id; // Get the id of the clicked service
@@ -144,8 +148,6 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
               </ul>
             </nav>
           </section>
-          {/* <div className="absolute top-90 w-290 h-0.5 bg-transparent border-amber-50 border-b-1  opacity-10"></div> */}
-          {/* <div className="absolute top-90 left-60 w-120 h-0.5 bg-transparent border-amber-50 border-b-1 rotate-90 opacity-10 "></div> */}
           <section className="w-full h-full font-semibold dark:text-white">
             <p className="animate-fadeIn mt-59">
               PRODUCING <br></br>QUALITY VISUAL <br></br>REPRESENTATION
@@ -163,13 +165,8 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
 
         <main className=" dark:bg-transparent m-2 grid grid-cols-2 gap-2 mb-75">
           {/* services section  */}
-          <section
-            id="services"
-            className=' flex rounded-lg justify-end p-5 font-semibold bg-[url("./advanced-circles.jpg")] dark:bg-[url("./blend.jpg")] bg-cover dark:text-white h-110 text-5xl '
-          >
-            <p className="animate-fadeIn4">EXPLORE MY <br></br> SERVICES</p>
-          </section>
-
+          <ServiceBanner />
+          
           <section className=" bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110">
             {/* <div className="bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg">
               WEB DEVELOPMENT
@@ -247,139 +244,12 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
             <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square " id="4"></i></p>
             </div> */}
           </section>
+              <AboutMe />
+          
+              <ProjectsBanner />
+          
 
-          <article
-            id="about"
-            className="bg-white dark:bg-black rounded-lg h-150 col-span-full"
-          >
-            <p className="animate-fadeIn4 text-8xl font-semibold p-5 dark:text-white">
-              ABOUT <br></br> ME
-            </p>
-            <p className="animate-fadeIn3 absolute right-10 top-300 w-150 text-2xl p-5 dark:text-white">
-              I'm a passionate Full Stack Developer with a foundation in both
-              frontend and backend technologies. I specialize in building
-              responsive, user-focused web applications using HTML, CSS,
-              Tailwind CSS, JavaScript, and frameworks like React and Node.js.
-              On the backend, I work with databases like MySQL, and PostgreSQL
-              and I'm comfortable handling APIs, authentication, and server-side
-              logic.<br></br>
-              <br></br>
-              Beyond code, I care deeply about clean design, performance, and
-              solving real-world problems through technology. I've collaborated
-              on projects that range from improving company websites to building
-              systems from scratch, and I enjoy taking ownership from concept to
-              deployment.
-            </p>
-          </article>
-
-          <section
-            id="projects-banner"
-            className='bg-[url("./smooth-white-waves.jpg")] dark:bg-[url("./black-spheres.jpg")] bg-cover bg-bottom rounded-lg h-50 col-span-full flex justify-between p-5'
-          >
-            <p className="animate-fadeIn4 dark:text-white flex justify-end text-xl font-normal place-items-center h-full mt-12 ">
-              BELOW ARE A FEW OF MY PROJECTS <br></br> TO PROVE MY CAPABILITIES
-            </p>
-            <p className="animate-fadeIn3 dark:text-white flex justify-end text-8xl font-semibold place-items-center pb-9 h-full">
-              PROJECTS
-            </p>
-          </section>
-
-          <section
-            id="projects"
-            className="rounded-lg h-170 col-span-full grid grid-cols-3 gap-2 "
-          >
-            <div
-              id="first-project"
-              className='bg-white backdrop-blur-2xl dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg h-120 col-span-2 p-5'
-            >
-              <span className="text-6xl italic font-bold">
-                SUBREDDIT<br></br> CHANNEL <br></br> VIEWER
-              </span>
-              <div className="gap-8 flex flex-col ">
-                <p className="text-2xl font-light">
-                  A web application that allows users <br></br> to view and
-                  interact with Reddit channels,<br></br> showcasing my skills
-                  in API integration<br></br> and user interface design.
-                </p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer rounded ">
-                  <a
-                    href="https://gomoatdvt.github.io/Subreddit/"
-                    target="_blank"
-                    className=""
-                  >
-                    VIEW
-                  </a>
-                </button>
-              </div>
-            </div>
-
-            <div
-              id="second-project"
-              className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left flex flex-col  justify-center gap-15 items-center text-center rounded-lg p-3 '
-            >
-              <span className="text-5xl italic font-bold">SORTED</span>
-              <div className="gap-15 flex flex-col px-11">
-                <p className="text-xl  font-light text-start">
-                  A web application that allows users to visually organise tasks
-                  they have to complete, improving time management and
-                  productivity. Showcasing my skills in DOM manipulation in
-                  JavaScript and user interface design.
-                </p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer rounded ">
-                  <a
-                    href="https://gomoatdvt.github.io/To-Do-list/"
-                    target="_blank"
-                    className=""
-                  >
-                    VIEW
-                  </a>
-                </button>
-              </div>
-            </div>
-
-            <div
-              id="third-project"
-              className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex flex-col items-center text-center p-3 justify-center gap-15 rounded-lg h-120'
-            >
-              <span className="text-5xl italic font-bold">AGE CALCULATOR</span>
-              <div className="gap-15 flex flex-col px-11 ">
-                <p className="text-xl font-light text-start">
-                  A web application that allows users to recieve an accurate
-                  calculation of their, or any other person/ things age.
-                  Showcasing my skills in Node package management, DOM
-                  manipulation in JavaScript and user interface design.
-                </p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer rounded ">
-                  <a
-                    href="https://gomoatdvt.github.io/Age-calculator/"
-                    target="_blank"
-                    className=""
-                  >
-                    VIEW
-                  </a>
-                </button>
-              </div>
-            </div>
-
-            <div
-              id="fourth-project"
-              className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex justify-around items-center rounded-lg py-6 col-span-2'
-            >
-              <span className="text-6xl italic font-bold"> ECHOBYTE </span>
-              <div className="gap-8 flex flex-col ">
-                <p className="text-2xl font-light">
-                  A web application that allows users <br></br> to view, create,
-                  post, and delete blogs.<br></br> showcasing my skills in DOM
-                  Manipulation<br></br> and user interface design.
-                </p>
-                <button className="border-2 dark:border-amber-200 dark:hover:text-amber-300 cursor-pointer px-2 rounded ">
-                  <a href="#" target="_blank" className="">
-                    VIEW
-                  </a>
-                </button>
-              </div>
-            </div>
-          </section>
+          <Projects />
         </main>
         <TechnologiesCarousel />
         <footer className=" h-max m-2 grid grid-cols-1 md:grid-cols-2 gap-4 bg-transparent">
