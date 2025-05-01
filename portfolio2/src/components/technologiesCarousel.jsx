@@ -49,10 +49,7 @@ function TechnologiesCarousel() {
     ];
 
     const [currentIndex, setCurrentIndex] = React.useState(0);
-    setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) );
-    }, 2000); // Change every 3 seconds
-
+    
     return (
         <>
 
