@@ -10,7 +10,7 @@ function Projects() {
           >
             <div
               id="first-project"
-              className='bg-white backdrop-blur-2xl dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg h-120 col-span-2 p-5'
+              className='bg-[url("./soft-performance.jpg")] backdrop-blur-2xl dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg h-120 col-span-2 p-5'
             >
               <span className="text-6xl italic font-bold">
                 SUBREDDIT<br></br> CHANNEL <br></br> VIEWER
@@ -35,7 +35,7 @@ function Projects() {
 
             <div
               id="second-project"
-              className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left flex flex-col  justify-center gap-15 items-center text-center rounded-lg p-3 '
+              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left flex flex-col  justify-center gap-15 items-center text-center rounded-lg p-3 '
             >
               <span className="text-5xl italic font-bold">SORTED</span>
               <div className="gap-15 flex flex-col px-11">
@@ -59,7 +59,7 @@ function Projects() {
 
             <div
               id="third-project"
-              className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex flex-col items-center text-center p-3 justify-center gap-15 rounded-lg h-120'
+              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex flex-col items-center text-center p-3 justify-center gap-15 rounded-lg h-120'
             >
               <span className="text-5xl italic font-bold">AGE CALCULATOR</span>
               <div className="gap-15 flex flex-col px-11 ">
@@ -83,7 +83,7 @@ function Projects() {
 
             <div
               id="fourth-project"
-              className='bg-white dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex justify-around items-center rounded-lg py-6 col-span-2'
+              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom  flex justify-around items-center rounded-lg py-6 col-span-2'
             >
               <span className="text-6xl italic font-bold"> ECHOBYTE </span>
               <div className="gap-8 flex flex-col ">

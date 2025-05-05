@@ -53,12 +53,12 @@ function TechnologiesCarousel() {
     return (
         <>
 
-            <div id="technologies" className=" overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-full bg-gray-100 dark:bg-[url('./dark3.jpg')] bg-cover bg-center rounded-lg">
+            <div id="technologies" className=" overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-full bg-[url('./soft-performance.jpg')] dark:bg-[url('./dark3.jpg')] bg-cover bg-center rounded-lg">
                 <div className="flex ml-25 ">
                     {technologies.map((tech, index) => (
                         <div
                             key={index}
-                            className={`animate-fullViewCarousel w-32 h-32 flex flex-col items-center justify-center bg-zinc-800 m-4 rounded-lg opacity-90 shadow-lg `}
+                            className={`animate-fullViewCarousel w-32 h-32 flex flex-col items-center justify-center bg-zinc-400 dark:bg-zinc-800 m-4 rounded-lg opacity-90 shadow-lg `}
                         >
                             <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
                             <p className="mt-2 text-center text-gray-800 dark:text-white">{tech.name}</p>

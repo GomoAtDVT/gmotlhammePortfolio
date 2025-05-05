@@ -55,10 +55,10 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
           onClose={closeModal}
           service={selectedService}
         />
-        <header className="bg-[url('./white-waves.jpg')] dark:bg-[url('./black-spheres.jpg')] bg-top bg-cover dark:bg-right p-5 m-2 rounded-lg h-170">
+        <header className="bg-[url('./soft-performance.jpg')] dark:bg-[url('./black-spheres.jpg')] bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170">
           <section className="flex items-center justify-between p-5">
-            <div id="logo-light" className="hidden dark:block w-45 -mr-35">
-              <img src="./dark-logo.png" alt="logo" />
+            <div id="logo-light" className="hidden dark:block w-45 -mr-35 ">
+              <img  src="./dark-logo.png" alt="logo" />
             </div>
 
             <div id="logo-dark" className="dark:hidden w-45 -mr-35">
@@ -168,17 +168,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
           <ServiceBanner />
           
           <section className=" bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110">
-            {/* <div className="bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg">
-              WEB DEVELOPMENT
-              <p
-                className="text-lg flex justify-end mt-11 mr-4 gap-2 cursor-pointer dark:text-white"
-                onClick={openModel}
-                id="1"
-              >
-                LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
-              </p>
-            </div> */}
-            <div className=' text-4xl    dark:text-white   dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
+            <div className='bg-[url("./soft-performance.jpg")] text-4xl   dark:text-white   dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
               <p className="animate-fadeIn3">WEB DEVELOPMENT</p>{" "}
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -188,18 +178,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
                 LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
               </p>
             </div>
-
-            <div className="bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg">
-              FULL STACK DEVELOPMENT{" "}
-              <p
-                className="text-lg  flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
-                onClick={openModel}
-                id="2"
-              >
-                LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
-              </p>
-            </div>
-            <div className='  text-4xl hidden  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
+            <div className='  text-4xl bg-[url("./soft-performance.jpg")]  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
               <p className="animate-fadeIn3">FULL STACK DEVELOPMENT</p>{" "}
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -210,17 +189,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
               </p>
             </div>
 
-            <div className="bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-black dark:hidden mr-1.5 h-35 p-4 rounded-lg">
-              CYBERSECURITY{" "}
-              <p
-                className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
-                onClick={openModel}
-                id="3"
-              >
-                LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
-              </p>
-            </div>
-            <div className='text-4xl  hidden dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>
+            <div className='text-4xl  bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
               <p className="animate-fadeIn3">MOBILE DEVELOPMENT</p>
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -230,7 +199,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
                 LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
               </p>
             </div>
-            <div className='bg-white text-4xl hover:bg-linear-65 from-amber-200 to-yellow-400 duration-300 ease-in-out  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:hover:bg-[url("./blend.jpg")]  mr-1.5 h-35 p-4 rounded-lg'>
+            <div className=' text-4xl bg-[url("./soft-performance.jpg")] duration-300 ease-in-out  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom  dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
               GRAPHIC DESIGN{" "}
               <p
                 className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -240,9 +209,6 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
                 LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
               </p>
             </div>
-            {/* <div className=' text-4xl  hidden   dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:block mr-1.5 h-35 p-4 rounded-lg'>GRAPHIC DESIGN
-            <p className='text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer' onClick={openModel}>LEARN MORE <i className="bi bi-arrow-up-right-square " id="4"></i></p>
-            </div> */}
           </section>
               <AboutMe />
           
@@ -253,7 +219,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
         </main>
         <TechnologiesCarousel />
         <footer className=" h-max m-2 grid grid-cols-1 md:grid-cols-2 gap-4 bg-transparent">
-          <section className="bg-zinc-300 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1">
+          <section className="bg-zinc-400 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1">
             <h1 className="dark:text-white text-4xl mb-7">
               Ready to collaborate on converting your dream into reality
             </h1>
@@ -324,7 +290,7 @@ const [selectedService, setSelectedService] = useState({}); // State for selecte
           </section>
           <section
             
-            className=' dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '
+            className='bg-[url("./white-cube.jpg")] dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '
           >
             
           </section>

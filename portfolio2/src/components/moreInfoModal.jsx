@@ -6,7 +6,7 @@ const MoreInfoModal = ({ isOpen, onClose ,service}) => {
     return (
         <>
         <div id="modal-overlay" className='h-full w-full z-3 top-0 fixed backdrop-blur-xs' onClick={onClose}>
-            <div id="modal-content" className="animate-popOut h-150 w-150 z-10 fixed top-20 left-110 bg-amber-500 dark:bg-[url('./dark-modal2.jpg')] bg-cover bg-left rounded-xl " onClick={(e) => e.stopPropagation()}>
+            <div id="modal-content" className="animate-popOut h-150 w-150 z-10 fixed top-20 left-110 bg-[url('./white-waves.jpg')] dark:bg-[url('./dark-modal2.jpg')] bg-cover bg-left rounded-xl " onClick={(e) => e.stopPropagation()}>
                 <button id="modal-close" className='dark:text-white text-2xl p-5 cursor-pointer absolute right-0' onClick={onClose}>
                     &times;
                 </button>
