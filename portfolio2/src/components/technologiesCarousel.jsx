@@ -44,6 +44,10 @@ function TechnologiesCarousel() {
             name: "Azure",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
         },
+        {
+            name: "GitHub",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        }
         
         
     ];

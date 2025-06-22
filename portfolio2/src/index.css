@@ -97,13 +97,13 @@
 
 @keyframes fullViewCarousel {
   0% {
-    transform: translateX(0);
+    transform: translateX(60%);
   }
   50% {
-    transform: translateX(-90px);
+    transform: translateX(-145%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(60%);
   }
 }
 

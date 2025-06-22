@@ -40,7 +40,7 @@ function Projects() {
               <span className="text-5xl italic font-bold">SORTED</span>
               <div className="gap-15 flex flex-col px-11">
                 <p className="text-xl  font-light text-start">
-                  A web application that allows users to visually organise tasks
+                  A web application that allows users to visually organize tasks
                   they have to complete, improving time management and
                   productivity. Showcasing my skills in DOM manipulation in
                   JavaScript and user interface design.
@@ -64,7 +64,7 @@ function Projects() {
               <span className="text-5xl italic font-bold">AGE CALCULATOR</span>
               <div className="gap-15 flex flex-col px-11 ">
                 <p className="text-xl font-light text-start">
-                  A web application that allows users to recieve an accurate
+                  A web application that allows users to receive an accurate
                   calculation of their, or any other person/ things age.
                   Showcasing my skills in Node package management, DOM
                   manipulation in JavaScript and user interface design.
@@ -85,7 +85,7 @@ function Projects() {
               id="fourth-project"
               className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom  flex justify-around items-center rounded-lg py-6 col-span-2'
             >
-              <span className="text-6xl italic font-bold"> ECHOBYTE </span>
+              <span className="text-6xl italic font-bold"> ECHOSPACE </span>
               <div className="gap-8 flex flex-col ">
                 <p className="text-2xl font-light">
                   A web application that allows users <br></br> to view, create,
