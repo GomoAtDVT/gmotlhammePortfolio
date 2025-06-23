@@ -10,6 +10,7 @@ function AboutMe() {
             <p className="animate-fadeIn4 text-8xl font-semibold p-5 ">
               ABOUT <br></br> ME
             </p>
+            <p className="animate-fadeIn3 absolute left-2 italic top-410 w-150 text-2xl p-5">Gauteng, South Africa</p>
             <p className="animate-fadeIn3 absolute right-9 top-300 w-150 text-2xl p-5 ">
               I'm a passionate Full Stack Developer with a foundation in both
               frontend and backend technologies. I specialize in building
