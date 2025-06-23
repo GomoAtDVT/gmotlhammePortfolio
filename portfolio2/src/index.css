@@ -93,12 +93,20 @@
 .animate-fadeIn4 {
   animation: fadeIn4 2s ease-in-out;
 }
-  @keyframes wiggle {
-    0%,
-    100% {
-      transform: rotate(-3deg);
-    }
-    50% {
-      transform: rotate(3deg);
-    }
+  
+
+@keyframes fullViewCarousel {
+  0% {
+    transform: translateX(60%);
   }
+  50% {
+    transform: translateX(-145%);
+  }
+  100% {
+    transform: translateX(60%);
+  }
+}
+
+.animate-fullViewCarousel {
+  animation: fullViewCarousel 15s ease-in-out infinite;
+}
