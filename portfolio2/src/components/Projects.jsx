@@ -6,13 +6,13 @@ function Projects() {
         <>
         <section
             id="projects"
-            className="rounded-lg h-170 col-span-full grid grid-cols-3 gap-2 "
+            className="rounded-lg h-fit col-span-full grid lg:grid-cols-3 sm:grid-cols-1 gap-2 "
           >
             <div
               id="first-project"
-              className='bg-[url("./soft-performance.jpg")] backdrop-blur-2xl dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg h-120 col-span-2 p-5'
+              className='bg-[url("./soft-performance.jpg")] backdrop-blur-2xl dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg lg:h-120 sm:h-fit lg:col-span-2 p-5 sm:py-16 sm:gap-5'
             >
-              <span className="text-6xl italic font-bold">
+              <span className="lg:text-6xl sm:text-5xl italic font-bold">
                 SUBREDDIT<br></br> CHANNEL <br></br> VIEWER
               </span>
               <div className="gap-8 flex flex-col ">
@@ -35,7 +35,7 @@ function Projects() {
 
             <div
               id="second-project"
-              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left flex flex-col  justify-center gap-15 items-center text-center rounded-lg p-3 '
+              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left flex flex-col  justify-center gap-15 lg:col-span-1 sm:col-span-2 items-center text-center rounded-lg p-3 sm:py-16 '
             >
               <span className="text-5xl italic font-bold">SORTED</span>
               <div className="gap-15 flex flex-col px-11">
@@ -59,7 +59,7 @@ function Projects() {
 
             <div
               id="third-project"
-              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex flex-col items-center text-center p-3 justify-center gap-15 rounded-lg h-120'
+              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-left  flex flex-col items-center lg:text-center p-3 justify-center gap-15 rounded-lg lg:h-120 sm:h-fit sm:py-16 lg:col-span-1 sm:col-span-2'
             >
               <span className="text-5xl italic font-bold">AGE CALCULATOR</span>
               <div className="gap-15 flex flex-col px-11 ">
@@ -83,7 +83,7 @@ function Projects() {
 
             <div
               id="fourth-project"
-              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom  flex justify-around items-center rounded-lg py-6 col-span-2'
+              className='bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom  flex justify-around items-center rounded-lg lg:py-6 sm:py-16 col-span-2 sm:gap-5 sm:px-5'
             >
               <span className="text-6xl italic font-bold"> ECHOSPACE </span>
               <div className="gap-8 flex flex-col ">

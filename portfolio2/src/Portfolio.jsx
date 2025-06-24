@@ -10,6 +10,7 @@ import ProjectsBanner from "./components/ProjectsBanner";
 import Projects from "./components/Projects";
 import emailjs from "@emailjs/browser";
 function Portfolio() {
+  const [phone, setPhone] = useState("");
   const [contactForm, setContactForm] = useState({
     name: "",
     company: "",
@@ -76,9 +77,9 @@ function Portfolio() {
             name: "",
             company: "",
             email: "",
-            phone: "",
             message: "",
           });
+          setPhone("");
         },
         (error) => {
           console.log("FAILED...", error);
@@ -93,17 +94,17 @@ function Portfolio() {
         onClose={closeModal}
         service={selectedService}
       />
-      <header className="bg-[url('./soft-performance.jpg')] dark:bg-[url('./black-spheres.jpg')] bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170">
+      <header className="bg-[url('./soft-performance.jpg')] dark:bg-[url('./black-spheres.jpg')] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170 sm:bg-left">
         <section className="flex items-center justify-between p-5">
-          <div id="logo-light" className="hidden dark:block w-45 -mr-35 ">
+          <div id="logo-light" className="hidden w-35 dark:block lg:w-45 -mr-35 ">
             <img src="./dark-logo.png" alt="logo" />
           </div>
 
-          <div id="logo-dark" className="dark:hidden w-45 -mr-35">
+          <div id="logo-dark" className="dark:hidden w-35 lg:w-45 -mr-35">
             <img src="./dark-nobg-logo.png" alt="logo" />
           </div>
 
-          <nav className="dark:text-white hidden md:flex">
+          <nav className="dark:text-white hidden lg:flex">
             <ul className="flex gap-30 text-md font-semibold ">
               <li className="hover:text-amber-300 dark:hover:text-amber-600">
                 <a href="#services">SERVICES</a>
@@ -191,17 +192,17 @@ function Portfolio() {
             PRODUCING <br></br>QUALITY VISUAL <br></br>REPRESENTATION
           </p>
 
-          <p className="animate-fadeIn2 absolute left-121 bottom-28">
-            BY MAINTAINING TRUST <br></br>BETWEEN CLIENTS{" "}
+          <p className="animate-fadeIn2 absolute lg:left-121 sm:left-10 lg:bottom-28 sm:bottom-100 md:bottom-30 md:left-25">
+            BY MAINTAINING TRUST <br></br>BETWEEN CLIENTS
           </p>
 
-          <p className="animate-fadeIn3 absolute text-8xl right-4 bottom-20">
-            REFLECTING <br></br>CONTINIOUS<br></br> GROWTH
+          <p className="animate-fadeIn3 absolute lg:text-8xl sm:text-6xl right-4 lg:bottom-20 md:bottom-20 sm:right-10 sm:top-100">
+            REFLECTING <br></br>CONTINUOUS<br></br> GROWTH
           </p>
         </section>
       </header>
 
-      <main className=" dark:bg-transparent m-2 grid grid-cols-2 gap-2 mb-75">
+      <main className=" dark:bg-transparent m-2 grid lg:grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-1">
         {/* services section  */}
         <ServiceBanner />
 
@@ -333,10 +334,8 @@ function Portfolio() {
                 name="phone"
                 placeholder="082 123 4567"
                 country={"za"}
-                value={contactForm}
-                onChange={(e) =>
-                  setContactForm({ ...contactForm, phone: e.target.value })
-                }
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
 
