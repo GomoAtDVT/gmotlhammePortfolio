@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import MoreInfoModal from "./components/moreInfoModal";
@@ -30,14 +30,12 @@ function Portfolio() {
     toggleContainer.classList.toggle("invisible");
     toggleContainer.classList.toggle("visible");
   };
-  const body = document.body;
+  const [colorscheme, setColorScheme] = useState("dark:");
   const lightMode = () => {
-    body.style.background = "black";
-    body.style.color = "white";
+    setColorScheme("")
   };
   const darkMode = () => {
-    body.style.background = "white";
-    body.style.color = "black";
+    setColorScheme("dark:")
   };
 
   const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
@@ -90,17 +88,18 @@ function Portfolio() {
   return (
     <>
       <MoreInfoModal
+        colorscheme={colorscheme}
         isOpen={isModalOpen}
         onClose={closeModal}
         service={selectedService}
       />
-      <header className="bg-[url('./soft-performance.jpg')] dark:bg-[url('./black-spheres.jpg')] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170 sm:bg-left">
+      <header className={`bg-[url("./soft-performance.jpg")] dark:bg-[url("./black-spheres.jpg")] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170 sm:bg-left`}>
         <section className="flex items-center justify-between p-5">
-          <div id="logo-light" className="hidden w-35 dark:block lg:w-45 -mr-35 ">
+          <div id="logo-light" className={`hidden w-35 dark:block lg:w-45 -mr-35 `}>
             <img src="./dark-logo.png" alt="logo" />
           </div>
 
-          <div id="logo-dark" className="dark:hidden w-35 lg:w-45 -mr-35">
+          <div id="logo-dark" className="dark:hidden block w-35 lg:w-45 -mr-35">
             <img src="./dark-nobg-logo.png" alt="logo" />
           </div>
 
@@ -162,12 +161,12 @@ function Portfolio() {
               <hr />
 
               <div className="dark:font-light ">
-                <button
+                {/* <button
                   onClick={changeAppearence}
                   className="dark:font-light hover:text-amber-300 dark:hover:text-amber-600 cursor-pointer"
                 >
                   APPEARENCE
-                </button>
+                </button> */}
 
                 <div id="toggle-container" className="invisible mt-2">
                   <p
