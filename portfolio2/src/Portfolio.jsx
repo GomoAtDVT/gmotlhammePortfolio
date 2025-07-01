@@ -334,7 +334,7 @@ function Portfolio() {
                 placeholder="082 123 4567"
                 country={"za"}
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => setPhone(e.target)}
               />
             </div>
 
