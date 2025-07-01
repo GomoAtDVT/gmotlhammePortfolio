@@ -6,7 +6,7 @@ function AboutMe() {
         <>
         <article
             id="about"
-            className="bg-[url('./Me.jpg')] lg:bg-[center_65%] bg-[length:75%] sm:bg-[center_60%] sm:bg-[length:100%]   rounded-lg h-150 col-span-full"
+            className="bg-[url('/Me.jpg')] lg:bg-[center_65%] bg-[length:75%] sm:bg-[center_60%] sm:bg-[length:100%]   rounded-lg h-150 col-span-full"
           >
             <p className="animate-fadeIn4 text-8xl font-semibold p-5 ">
               ABOUT <br></br> ME
