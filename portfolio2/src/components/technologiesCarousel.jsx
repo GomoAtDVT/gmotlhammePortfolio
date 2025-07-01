@@ -56,8 +56,8 @@ function TechnologiesCarousel() {
     return (
         <>
 
-                <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4 flex flex-col items-center justify-center py-7 m-2 h-fit bg-[url('./soft-performance.jpg')] dark:bg-[url('./dark3.jpg')] bg-cover bg-center rounded-lg">Technologies I Use</h2>
-            <div id="technologies" className=" overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-fit bg-[url('./soft-performance.jpg')] dark:bg-[url('./dark3.jpg')] bg-cover bg-center rounded-lg">
+                <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4 flex flex-col items-center justify-center py-7 m-2 h-fit bg-[url('/soft-performance.jpg')] dark:bg-[url('/dark3.jpg')] bg-cover bg-center rounded-lg">Technologies I Use</h2>
+            <div id="technologies" className=" overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-fit bg-[url('/soft-performance.jpg')] dark:bg-[url('/dark3.jpg')] bg-cover bg-center rounded-lg">
                 <div className="sm:hidden lg:flex ml-25 animate-fullViewCarousel">
                     {technologies.map((tech, index) => (
                         <div

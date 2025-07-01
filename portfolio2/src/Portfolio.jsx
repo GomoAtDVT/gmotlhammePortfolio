@@ -93,7 +93,7 @@ function Portfolio() {
         onClose={closeModal}
         service={selectedService}
       />
-      <header className={`bg-[url("./soft-performance.jpg")] dark:bg-[url("./black-spheres.jpg")] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170 sm:bg-left`}>
+      <header className={`bg-[url("/soft-performance.jpg")] dark:bg-[url("/black-spheres.jpg")] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170 sm:bg-left`}>
         <section className="flex items-center justify-between p-5">
           <div id="logo-light" className={`hidden w-35 dark:block lg:w-45 -mr-35 `}>
             <img src="./dark-logo.png" alt="logo" />
@@ -206,7 +206,7 @@ function Portfolio() {
         <ServiceBanner />
 
         <section className=" bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110">
-          <div className='bg-[url("./soft-performance.jpg")] text-4xl   dark:text-white   dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className='bg-[url("/soft-performance.jpg")] text-4xl   dark:text-white   dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">WEB DEVELOPMENT</p>{" "}
             <p
               className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -216,7 +216,7 @@ function Portfolio() {
               LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
             </p>
           </div>
-          <div className='  text-4xl bg-[url("./soft-performance.jpg")]  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className='  text-4xl bg-[url("/soft-performance.jpg")]  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">FULL STACK DEVELOPMENT</p>{" "}
             <p
               className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -227,7 +227,7 @@ function Portfolio() {
             </p>
           </div>
 
-          <div className='text-4xl  bg-[url("./soft-performance.jpg")] dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className='text-4xl  bg-[url("/soft-performance.jpg")] dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">MOBILE DEVELOPMENT</p>
             <p
               className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -237,7 +237,7 @@ function Portfolio() {
               LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
             </p>
           </div>
-          <div className=' text-4xl bg-[url("./soft-performance.jpg")] duration-300 ease-in-out  dark:text-white dark:bg-[url("./blend.jpg")] bg-cover bg-bottom  dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className=' text-4xl bg-[url("/soft-performance.jpg")] duration-300 ease-in-out  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom  dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             GRAPHIC DESIGN{" "}
             <p
               className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
@@ -363,7 +363,7 @@ function Portfolio() {
             </button>
           </form>
         </section>
-        <section className='bg-[url("./white-cube.jpg")] dark:bg-[url("./peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '></section>
+        <section className='bg-[url("/white-cube.jpg")] dark:bg-[url("/peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '></section>
       </footer>
     </>
   );
