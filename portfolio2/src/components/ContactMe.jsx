@@ -5,7 +5,7 @@ function ContactMe() {
         <>
         <section
             id="contact"
-            className='bg-zinc-400 flex flex-col items-center dark:bg-zinc-900 rounded-lg p-8 row-2 md:row-1 min-h-150 h-full w-full'
+            className='bg-zinc-500 flex flex-col items-center dark:bg-zinc-900 rounded-lg p-8 row-2 md:row-1 min-h-150 h-full w-full'
           >
             
             <p className="animate-fadeIn4 dark:text-white opacity-70 text-8xl font-semibold">CONTACT ME</p>

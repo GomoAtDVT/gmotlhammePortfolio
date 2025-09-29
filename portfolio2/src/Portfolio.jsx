@@ -229,7 +229,7 @@ function Portfolio() {
           </div>
 
           <div className='text-4xl  bg-[url("/soft-performance.jpg")] dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
-            <p className="animate-fadeIn3">MOBILE DEVELOPMENT</p>
+            <p className="animate-fadeIn3">BACKEND DEVELOPMENT</p>
             <p
               className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
               onClick={openModel}
@@ -239,7 +239,7 @@ function Portfolio() {
             </p>
           </div>
           <div className=' text-4xl bg-[url("/soft-performance.jpg")] duration-300 ease-in-out  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom  dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
-            GRAPHIC DESIGN{" "}
+            FRONTEND DEVELOPMENT{" "}
             <p
               className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
               onClick={openModel}

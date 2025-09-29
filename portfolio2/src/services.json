@@ -14,14 +14,14 @@
         },
         {
             "id": 3,
-            "name": "Mobile Development",
-            "description": "Developing mobile applications for iOS and Android platforms."
+            "name": "Backend Development",
+            "description": "Working with APIs, developing server side logic with database management implementation."
            
         },
         {
             "id": 4,
-            "name": "Graphic Design",
-            "description": "Designing logos, banners, and other graphics for your brand."
+            "name": "Frontend Development",
+            "description": "Designing and implementing user interfaces with a focus on user experience."
         }
     ]
 }
