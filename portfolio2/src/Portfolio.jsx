@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import { service } from "./services.json";
 import ProjectsBanner from "./components/ProjectsBanner";
 import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe";
 import emailjs from "@emailjs/browser";
 function Portfolio() {
   const [phone, setPhone] = useState("");
@@ -93,7 +94,7 @@ function Portfolio() {
         onClose={closeModal}
         service={selectedService}
       />
-      <header className={`bg-[url("/soft-performance.jpg")] dark:bg-[url("/black-spheres.jpg")] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170 sm:bg-left`}>
+      <header className={`bg-[url("/soft-performance.jpg")] flex flex-col dark:bg-[url("/black-spheres.jpg")] lg:bg-center bg-cover  dark:bg-right p-5 m-2 rounded-lg h-170  sm:bg-left`}>
         <section className="flex items-center justify-between p-5">
           <div id="logo-light" className={`hidden w-35 dark:block lg:w-45 -mr-35 `}>
             <img src="./dark-logo.png" alt="logo" />
@@ -201,11 +202,11 @@ function Portfolio() {
         </section>
       </header>
 
-      <main className=" dark:bg-transparent m-2 grid lg:grid-cols-2 gap-2 sm:grid-cols-1 md:grid-cols-1">
+      <main className=" dark:bg-transparent m-2 grid grid-cols-2 gap-2  ">
         {/* services section  */}
         <ServiceBanner />
 
-        <section className=" bg-transparent overflow-y-scroll styleScroll flex flex-col gap-2.5 h-110">
+        <section className=" bg-transparent overflow-y-scroll styleScroll lg:grid-cols-1 h-110 flex flex-col gap-2.5 w-full">
           <div className='bg-[url("/soft-performance.jpg")] text-4xl   dark:text-white   dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">WEB DEVELOPMENT</p>{" "}
             <p
@@ -254,9 +255,12 @@ function Portfolio() {
 
         <Projects />
       </main>
+      <section className="w-full">
+
       <TechnologiesCarousel />
-      <footer className=" h-max m-2 grid grid-cols-1 md:grid-cols-2 gap-4 bg-transparent">
-        <section className="bg-zinc-400 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1">
+      </section>
+      <footer className=" h-max m-2 grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 col-span-2 gap-4 bg-transparent">
+        {/* <section className="bg-zinc-400 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1">
           <h1 className="dark:text-white text-4xl mb-7">
             Ready to collaborate on converting your dream into reality
           </h1>
@@ -362,7 +366,8 @@ function Portfolio() {
               Send Message
             </button>
           </form>
-        </section>
+        </section>*/}
+        <ContactMe />
         <section className='bg-[url("/white-cube.jpg")] dark:bg-[url("/peach-cube.jpg")] bg-cover rounded-lg col-1 row-1 md:col-2 '></section>
       </footer>
     </>

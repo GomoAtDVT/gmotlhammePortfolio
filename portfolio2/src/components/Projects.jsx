@@ -6,11 +6,11 @@ function Projects() {
         <>
         <section
             id="projects"
-            className="rounded-lg h-fit col-span-full grid lg:grid-cols-3 sm:grid-cols-1 gap-2 "
+            className="rounded-lg h-fit col-span-full grid lg:grid-cols-3  gap-2 "
           >
             <div
               id="first-project"
-              className='bg-[url("/soft-performance.jpg")] backdrop-blur-2xl dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg lg:h-120 sm:h-fit lg:col-span-2 p-5 sm:py-16 sm:gap-5'
+              className='bg-[url("/soft-performance.jpg")] backdrop-blur-2xl dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom font-semibold flex justify-around items-center rounded-lg lg:h-120 h-full lg:col-span-2 p-5 sm:py-16 sm:gap-5'
             >
               <span className="lg:text-6xl sm:text-5xl italic font-bold">
                 SUBREDDIT<br></br> CHANNEL <br></br> VIEWER

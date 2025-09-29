@@ -56,9 +56,9 @@ function TechnologiesCarousel() {
     return (
         <>
 
-                <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4 flex flex-col items-center justify-center py-7 m-2 h-fit bg-[url('/soft-performance.jpg')] dark:bg-[url('/dark3.jpg')] bg-cover bg-center rounded-lg">Technologies I Use</h2>
-            <div id="technologies" className=" overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-fit bg-[url('/soft-performance.jpg')] dark:bg-[url('/dark3.jpg')] bg-cover bg-center rounded-lg">
-                <div className="sm:hidden lg:flex ml-25 animate-fullViewCarousel">
+                <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4 flex flex-col items-center justify-center py-7 m-2 h-fit  bg-[url('/soft-performance.jpg')] dark:bg-[url('/dark3.jpg')] bg-cover bg-center rounded-lg">Technologies I Use</h2>
+            <div id="technologies" className=" overflow-x-scroll hidescroll flex flex-col items-center justify-center py-7 m-2 h-fit  bg-[url('/soft-performance.jpg')] dark:bg-[url('/dark3.jpg')] bg-cover bg-center rounded-lg">
+                <div className="sm:hidden md:hidden flex lg:flex ml-25 ">
                     {technologies.map((tech, index) => (
                         <div
                             key={index}
@@ -69,8 +69,8 @@ function TechnologiesCarousel() {
                         </div>
                     ))}
                 </div>  
-                <div className="sm:flex sm:ml-250 lg:hidden">
-                    {technologies.map((tech, index) => (
+                <div className="sm:flex flex md:flex-row sm:ml-250 lg:hidden">
+                    {/* {technologies.map((tech, index) => (
                         <div
                             key={index}
                             className={` w-32 h-32 flex flex-col items-center justify-center bg-zinc-400 dark:bg-zinc-800 m-4 rounded-lg opacity-90 shadow-lg `}
@@ -78,7 +78,7 @@ function TechnologiesCarousel() {
                             <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
                             <p className="mt-2 text-center text-gray-800 dark:text-white">{tech.name}</p>
                         </div>
-                    ))}
+                    ))} */}
                 </div>  
             </div>
         </>
