@@ -202,25 +202,25 @@ function Portfolio() {
         </section>
       </header>
 
-      <main className=" dark:bg-transparent m-2 grid grid-cols-2 gap-2  ">
+      <main className=" dark:bg-transparent m-2 lg:grid lg:grid-cols-2 gap-2  ">
         {/* services section  */}
         <ServiceBanner />
 
-        <section className=" bg-transparent overflow-y-scroll styleScroll lg:grid-cols-1 h-110 flex flex-col gap-2.5 w-full">
-          <div className='bg-[url("/soft-performance.jpg")] text-4xl   dark:text-white   dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+        <section className=" bg-transparent overflow-y-scroll styleScroll lg:grid-cols-1 mt-2 lg:mt-0 h-110 flex flex-col gap-2.5 w-full">
+          <div className='bg-[url("/soft-performance.jpg")] text-2xl lg:text-4xl   dark:text-white   dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">WEB DEVELOPMENT</p>{" "}
             <p
-              className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
+              className="text-lg flex justify-end mt-11 lg:mr-4 gap-2 dark:text-white cursor-pointer"
               onClick={openModel}
               id="1"
             >
               LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
             </p>
           </div>
-          <div className='  text-4xl bg-[url("/soft-performance.jpg")]  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className='  text-2xl lg:text-4xl bg-[url("/soft-performance.jpg")]  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">FULL STACK DEVELOPMENT</p>{" "}
             <p
-              className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
+              className="text-lg flex justify-end mt-11 lg:mr-4 gap-2 dark:text-white cursor-pointer"
               onClick={openModel}
               id="2"
             >
@@ -228,20 +228,20 @@ function Portfolio() {
             </p>
           </div>
 
-          <div className='text-4xl  bg-[url("/soft-performance.jpg")] dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className='text-2xl lg:text-4xl  bg-[url("/soft-performance.jpg")] dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
             <p className="animate-fadeIn3">BACKEND DEVELOPMENT</p>
             <p
-              className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
+              className="text-lg flex justify-end mt-11 lg:mr-4 gap-2 dark:text-white cursor-pointer"
               onClick={openModel}
               id="3"
             >
               LEARN MORE <i className="bi bi-arrow-up-right-square "></i>
             </p>
           </div>
-          <div className=' text-4xl bg-[url("/soft-performance.jpg")] duration-300 ease-in-out  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom  dark:bg-bottom mr-1.5 h-35 p-4 rounded-lg'>
+          <div className='text-2xl lg:text-4xl bg-[url("/soft-performance.jpg")] duration-300 ease-in-out  dark:text-white dark:bg-[url("/blend.jpg")] bg-cover bg-bottom  dark:bg-bottom mr-1.5 h-max lg:h-35 p-4 rounded-lg'>
             FRONTEND DEVELOPMENT{" "}
             <p
-              className="text-lg flex justify-end mt-11 mr-4 gap-2 dark:text-white cursor-pointer"
+              className="text-lg flex justify-end mt-11 lg:mr-4 gap-2 dark:text-white cursor-pointer"
               onClick={openModel}
               id="4"
             >
@@ -259,7 +259,7 @@ function Portfolio() {
 
       <TechnologiesCarousel />
       </section>
-      <footer className=" h-max m-2 grid grid-cols-2 md:grid-cols-2 sm:grid-cols-1 col-span-2 gap-4 bg-transparent">
+      <footer className=" h-max m-2 lg:grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 col-span-2 gap-4 bg-transparent">
         {/* <section className="bg-zinc-400 dark:bg-zinc-900 rounded-lg p-8 col-1 row-2 md:row-1">
           <h1 className="dark:text-white text-4xl mb-7">
             Ready to collaborate on converting your dream into reality
