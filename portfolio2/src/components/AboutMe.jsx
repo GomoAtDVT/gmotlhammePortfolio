@@ -34,7 +34,7 @@ function AboutMe() {
              return setMySummary(!mySummary);
             }}
             >{!mySummary ? "More" : "Less" }</button>
-            {mySummary ? <p className="backdrop-blur-3xl   animate-fadeIn3 absolute mx-3 top-415 w-fit  rounded-lg text-2xl py-15 p-5 sm:text-xl ">
+            {mySummary ? <p className="backdrop-blur-3xl  z-9 animate-fadeIn3 absolute mx-3 top-415 w-fit  rounded-lg text-2xl py-15 p-5 sm:text-xl ">
               I am, a passionate Full Stack Developer with a foundation in both
               frontend and backend technologies. I specialize in building
               responsive, user-focused web applications using HTML, CSS,
