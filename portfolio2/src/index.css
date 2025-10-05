@@ -114,3 +114,7 @@
 .animate-fullViewCarousel:hover {
   animation-play-state: paused;
 }
+
+body {
+  overflow-x: hidden;
+}

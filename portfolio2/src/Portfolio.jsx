@@ -130,7 +130,7 @@ function Portfolio() {
         </section>
 
         <section id="sidebar" className=" hidden">
-          <nav className="bg-zinc-200  dark:bg-zinc-800 p-4 w-80 dark:text-white flex flex-col justify-end absolute top-10 right-10 z-2 ">
+          <nav className="bg-zinc-200  dark:bg-zinc-800 p-4 w-80 dark:text-white flex flex-col justify-end absolute top-10   z-2 ">
             <button
               onClick={sidebarBtn}
               className="flex justify-end m-4 cursor-pointer dark:font-light hover:text-amber-300 dark:hover:text-amber-600"
@@ -192,7 +192,7 @@ function Portfolio() {
             PRODUCING <br></br>QUALITY VISUAL <br></br>REPRESENTATION
           </p>
 
-          <p className="animate-fadeIn2 absolute lg:left-121 sm:left-10 lg:bottom-28 sm:bottom-100 md:bottom-30 md:left-25">
+          <p className="animate-fadeIn2 absolute lg:left-0 left-10 lg:bottom-28 sm:bottom-100 md:bottom-30 md:left-25">
             BY MAINTAINING TRUST <br></br>BETWEEN CLIENTS
           </p>
 

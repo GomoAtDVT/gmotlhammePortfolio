@@ -11,9 +11,9 @@ function AboutMe() {
             <p className="animate-fadeIn4 text-8xl font-semibold p-5 ">
               ABOUT <br></br> ME
             </p>
-            <p className="animate-fadeIn3 absolute lg:left-2 italic lg:top-410 sm:top-525 w-150 text-2xl p-5">Gauteng, South Africa</p>
+            <p className="animate-fadeIn3 absolute lg:left-2 italic lg:top-410 sm:top-525 w-full text-2xl p-5">Gauteng, South Africa</p>
 
-            <p className="animate-fadeIn3 absolute right-9 top-300 w-150 lg:text-2xl p-5 hidden lg:block ">
+            <p className="animate-fadeIn3 absolute right-9 top-300 w-full lg:text-2xl p-5 hidden lg:block ">
                I'm a passionate Full Stack Developer with a foundation in both
               frontend and backend technologies. I specialize in building
                responsive, user-focused web applications using HTML, CSS,
@@ -34,7 +34,7 @@ function AboutMe() {
              return setMySummary(!mySummary);
             }}
             >{!mySummary ? "More" : "Less" }</button>
-            {mySummary ? <p className="backdrop-blur-3xl  z-9 animate-fadeIn3 absolute mx-3 top-415 w-fit  rounded-lg text-2xl py-15 p-5 sm:text-xl ">
+            {mySummary ? <p className="backdrop-blur-3xl  z-9 animate-fadeIn3 absolute mx-auto top-415 w-fit  rounded-lg text-2xl py-15 p-5 sm:text-xl ">
               I am, a passionate Full Stack Developer with a foundation in both
               frontend and backend technologies. I specialize in building
               responsive, user-focused web applications using HTML, CSS,
